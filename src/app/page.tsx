@@ -1,12 +1,13 @@
-export default function Home() {
-  return (
-    <main className="min-h-screen p-8">
-      <h1 className="text-4xl font-bold">Next.js E-Commerce</h1>
-      <p className="mt-4 text-lg">Chào mừng bạn đến với cửa hàng trực tuyến!</p>
-      <div className="bg-blue-500 text-white p-4 rounded-lg">
-  Đây là ô thử nghiệm Tailwind CSS.
-</div>
+import { ProductSlider } from "@/components/ProductSlider";
 
+export default function HomePage() {
+  return (
+    <main className="max-w-7xl mx-auto py-10">
+      <h1 className="text-2xl font-bold mb-6">Featured Products</h1>
+      <ProductSlider categoryId="1" />
+      <ProductSlider categoryId="2" />
+      <ProductSlider categoryId="3" />
+      <ProductSlider categoryId="4" />
     </main>
   );
 }
